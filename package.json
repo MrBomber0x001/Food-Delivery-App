@@ -1,0 +1,26 @@
+{
+  "name": "food-delivery-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:MrBomber0x001/Food-Delivery-App.git",
+  "author": "Yousef Meska <mrbomberboy123@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "express-ejs-layouts": "^2.5.1"
+  },
+  "scripts": {
+    "dev": "nodemon server/src/server.js",
+    "server": "node server/src/server.js"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^6.0.43",
+    "nodemon": "^2.0.15",
+    "resolve-url-loader": "5.0.0",
+    "sass": "^1.49.11",
+    "sass-loader": "12.1.0"
+  }
+}
