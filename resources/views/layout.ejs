@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@1.9.6/dist/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <!--nav-->
+    <nav class="container mx-auto flex items-center justify-between py-4">
+      <div><img src="/img/logo.png" alt="logo" /></div>
+      <div>
+        <ul class="flex items-center">
+          <li class="ml-6"><a href="#">Menu</a></li>
+          <li class="ml-6"><a href="#">Offers</a></li>
+          <li class="ml-6"><a href="/register">Register</a></li>
+          <li class="ml-6"><a href="/login">Login</a></li>
+          <li class="ml-6">
+            <a href="/cart" class="inline-block rounded-full px-4 py-2"
+              ><img src="/img/cart.png" alt="cart"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--end of nav-->
+    <%- body %>
+    <!--Hero-->
+
+    <!--end of Hero-->
+
+    <!--Menu container-->
+
+    <!--End of Menu-->
+
+    <footer><p>made with :heart: - Yousef Mahmoud</p></footer>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
