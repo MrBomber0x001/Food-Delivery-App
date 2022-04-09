@@ -1,0 +1,2 @@
+use debug package and remove all console.log();
+or use eslint with a rule to remove all console.log()
