@@ -9,6 +9,5 @@ exports.localStrategy = async (req, email, password, done) => {
   if (!isValid) {
     return done(null, false, { message: "Wrong credentials" });
   }
-  console.log("logged in");
   return done(null, user, { message: "Logged in successfully" });
 };

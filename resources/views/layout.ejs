@@ -44,8 +44,14 @@
           <li class="ml-6"><a href="/auth/login">Login</a></li>
           <% } %>
           <li class="ml-6">
-            <a href="/cart" class="inline-block rounded-full px-4 py-2"
-              ><img src="/img/cart.png" alt="cart"
+            <a
+              href="/cart"
+              class="inline-block rounded-full px-4 py-2 flex items-center"
+            >
+              <span id="cartCounter" class="text-white font-bold pr-2"
+                ><%= session.cart ? session.cart.totalQty : '' %>
+              </span>
+              <img src="/img/cart.png" alt="cart"
             /></a>
           </li>
         </ul>

@@ -1,4 +1,4 @@
-exports.ensureLoggeIn = () => {
+exports.ensureLoggeIn = (req, res, next) => {
   if (req.isAuthenticated()) {
     return next();
   }

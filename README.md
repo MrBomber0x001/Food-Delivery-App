@@ -6,7 +6,9 @@
 
 
 ## scripts
+
 - build 
+
 ```sh
 
 ```
@@ -42,3 +44,4 @@ customer panel
     [-] Redirect user upon sign up to an email-Verification page.
 [-] Add Reset Password
 [-] Add a complete User Profile page with dedicated page for user settings.
+[-] Make Unit and Integration testing

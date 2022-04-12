@@ -2,10 +2,10 @@ const { UserService } = require("../services");
 const validation = require("../validation");
 const { validateUser } = validation;
 const passport = require("passport");
-exports.login = (req, res, next) => {
+exports.loginPage = (req, res, next) => {
   res.render("auth/login");
 };
-exports.postLogin = (req, res, next) => {
+exports.login = (req, res, next) => {
   passport.authenticate("local", (err, user, info) => {
     if (err) {
       req.flash("error", info.message);
@@ -24,10 +24,10 @@ exports.postLogin = (req, res, next) => {
     });
   })(req, res, next);
 };
-exports.register = (req, res, next) => {
+exports.registerPage = (req, res, next) => {
   res.render("auth/register");
 };
-exports.postRegister = async (req, res, next) => {
+exports.register = async (req, res, next) => {
   const { firstname, lastname, email, password } = req.body;
   const { error } = validateUser(req.body);
   if (error) {
